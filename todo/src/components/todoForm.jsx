@@ -25,14 +25,15 @@ const TodoForm = () => {
     }
 
     return (
-        <div>
+        <div className= "todoForm">
             <form>
-                <label htmlFor='todo'>Enter Todo</label>
+                <label htmlFor='todo' />
                 <input 
                 id='todo'
                 type='text'
                 name='todo'
                 value={inputText}
+                placeholder='Todo Now!'
                 onChange={handleChanges}
                 />
                 <button onClick={handleSubmit}>Add</button>
